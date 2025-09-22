@@ -2,12 +2,12 @@
 
 import dynamic from "next/dynamic";
 
-const HouseScene = dynamic(() => import("@/components/HouseScene"), { ssr: false });
+const LegoBrickScene = dynamic(() => import("@/components/LegoBrickScene"), { ssr: false });
 
 export default function Home() {
   return (
     <main className="fixed inset-0">
-      <HouseScene />
+      <LegoBrickScene />
     </main>
   );
 }
